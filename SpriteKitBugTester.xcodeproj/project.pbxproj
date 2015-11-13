@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F12C65301BF52B84001DA6EE /* SpriteKitBugTester.h in Headers */ = {isa = PBXBuildFile; fileRef = F12C652F1BF52B84001DA6EE /* SpriteKitBugTester.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F12C65381BF52BD2001DA6EE /* SpriteKitBugTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C65371BF52BD2001DA6EE /* SpriteKitBugTester.swift */; };
-		F12C653A1BF52BE4001DA6EE /* SKBTBlank.png in Resources */ = {isa = PBXBuildFile; fileRef = F12C65391BF52BE4001DA6EE /* SKBTBlank.png */; };
+		F12C65401BF5360A001DA6EE /* SKBTBlank.png in Resources */ = {isa = PBXBuildFile; fileRef = F12C65391BF52BE4001DA6EE /* SKBTBlank.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +18,7 @@
 		F12C65311BF52B84001DA6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12C65371BF52BD2001DA6EE /* SpriteKitBugTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitBugTester.swift; sourceTree = "<group>"; };
 		F12C65391BF52BE4001DA6EE /* SKBTBlank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SKBTBlank.png; sourceTree = "<group>"; };
+		F12C65441BF54E1C001DA6EE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +35,7 @@
 		F12C65221BF52B84001DA6EE = {
 			isa = PBXGroup;
 			children = (
+				F12C65441BF54E1C001DA6EE /* SpriteKit.framework */,
 				F12C652E1BF52B84001DA6EE /* SpriteKitBugTester */,
 				F12C652D1BF52B84001DA6EE /* Products */,
 			);
@@ -126,7 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12C653A1BF52BE4001DA6EE /* SKBTBlank.png in Resources */,
+				F12C65401BF5360A001DA6EE /* SKBTBlank.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

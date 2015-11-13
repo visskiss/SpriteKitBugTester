@@ -43,7 +43,7 @@ public class SpriteKitBugTester {
         var bugTestInProgress:Bool = true
         var bugTimer:NSTimer?
         var blockTimer:NSTimer?
-        var launchImage:String?
+        public var launchImage:String?
         
         public override func didMoveToView(view: SKView) {
             if launchImage != nil {
