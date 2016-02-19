@@ -53,14 +53,12 @@ public class SpriteKitBugTester {
                 background.zPosition = -2
                 addChild(background)
             }
-            let bugTest1 = SKSpriteNode(imageNamed: "SKBTBlank")
+            let bugTest1 = SKNode()
             bugTest1.name = "Bug Test 1"
-            bugTest1.size = CGSizeMake(1, 1)
             bugTest1.position = CGPointZero
             addChild(bugTest1)
-            let bugTest2 = SKSpriteNode(imageNamed: "SKBTBlank")
+            let bugTest2 = SKNode()
             bugTest2.name = "Bug Test 2"
-            bugTest2.size = CGSizeMake(1, 1)
             bugTest2.position = CGPointZero
             bugTest1.addChild(bugTest2)
             let wait:NSTimeInterval = 0.003
@@ -87,11 +85,11 @@ public class SpriteKitBugTester {
             let bugTest2 = bugTest1.childNodeWithName("Bug Test 2")!
             if bugTest2.parent != nil {
                 self.bugPresent = false
-                print("Bug not present")
+                NSLog("Bug not present")
                 SpriteKitBugTester.complete(bugPresent:false)
             } else {
                 SpriteKitBugTester.complete(bugPresent:true)
-                print("Bug present")
+                NSLog("Bug present")
             }
         }
         
