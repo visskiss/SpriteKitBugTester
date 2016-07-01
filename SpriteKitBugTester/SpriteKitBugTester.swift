@@ -73,7 +73,7 @@ public class SpriteKitBugTester {
                 }
             }
             removeAndMove(bugTest2)
-            bugTimer = NSTimer.scheduledTimerWithTimeInterval(0.001, target: self, selector: "bugTest2", userInfo: nil, repeats: true)
+            bugTimer = NSTimer.scheduledTimerWithTimeInterval(0.001, target: self, selector: #selector(SpriteKitBugScene.bugTest2), userInfo: nil, repeats: true)
         }
         
         func bugTest2 () {
