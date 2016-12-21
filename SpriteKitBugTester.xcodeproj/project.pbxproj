@@ -11,12 +11,37 @@
 		F12C65381BF52BD2001DA6EE /* SpriteKitBugTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C65371BF52BD2001DA6EE /* SpriteKitBugTester.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F16BBA961E0A120600780A8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F16BBA901E0A120600780A8E /* FileHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F159120B1D9ED4830059979F;
+			remoteInfo = FileHelper;
+		};
+		F16BBA981E0A120600780A8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F16BBA901E0A120600780A8E /* FileHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F15912141D9ED4840059979F;
+			remoteInfo = FileHelperTests;
+		};
+		F16BBA9A1E0A120600780A8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F16BBA901E0A120600780A8E /* FileHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F15912311D9EDA610059979F;
+			remoteInfo = CommonCrypto;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F12C652C1BF52B84001DA6EE /* SpriteKitBugTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitBugTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12C652F1BF52B84001DA6EE /* SpriteKitBugTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKitBugTester.h; sourceTree = "<group>"; };
 		F12C65311BF52B84001DA6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12C65371BF52BD2001DA6EE /* SpriteKitBugTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitBugTester.swift; sourceTree = "<group>"; };
 		F12C65441BF54E1C001DA6EE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		F16BBA901E0A120600780A8E /* FileHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FileHelper.xcodeproj; path = ../../Frameworks/FileHelper/FileHelper.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +58,7 @@
 		F12C65221BF52B84001DA6EE = {
 			isa = PBXGroup;
 			children = (
+				F16BBA901E0A120600780A8E /* FileHelper.xcodeproj */,
 				F12C65441BF54E1C001DA6EE /* SpriteKit.framework */,
 				F12C652E1BF52B84001DA6EE /* SpriteKitBugTester */,
 				F12C652D1BF52B84001DA6EE /* Products */,
@@ -55,6 +81,16 @@
 				F12C65311BF52B84001DA6EE /* Info.plist */,
 			);
 			path = SpriteKitBugTester;
+			sourceTree = "<group>";
+		};
+		F16BBA911E0A120600780A8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F16BBA971E0A120600780A8E /* FileHelper.framework */,
+				F16BBA991E0A120600780A8E /* FileHelperTests.xctest */,
+				F16BBA9B1E0A120600780A8E /* CommonCrypto.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,12 +151,42 @@
 			mainGroup = F12C65221BF52B84001DA6EE;
 			productRefGroup = F12C652D1BF52B84001DA6EE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F16BBA911E0A120600780A8E /* Products */;
+					ProjectRef = F16BBA901E0A120600780A8E /* FileHelper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F12C652B1BF52B84001DA6EE /* SpriteKitBugTester */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F16BBA971E0A120600780A8E /* FileHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FileHelper.framework;
+			remoteRef = F16BBA961E0A120600780A8E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F16BBA991E0A120600780A8E /* FileHelperTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FileHelperTests.xctest;
+			remoteRef = F16BBA981E0A120600780A8E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F16BBA9B1E0A120600780A8E /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = F16BBA9A1E0A120600780A8E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F12C652A1BF52B84001DA6EE /* Resources */ = {
