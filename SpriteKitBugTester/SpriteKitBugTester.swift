@@ -76,7 +76,7 @@ public class SpriteKitBugTester {
             bugTimer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(SpriteKitBugScene.bugTest2), userInfo: nil, repeats: true)
         }
         
-        func bugTest2 () {
+        @objc func bugTest2 () {
             if bugTestInProgress {
                 return
             }
